@@ -26,7 +26,7 @@ async function getTodayWeather() {
 
 
     try {
-        const result = await fetch('http://api.openweathermap.org/data/2.5/weather?appid=57c70e5816fcd6cbdb312839f8ff4ea2&q=' + input);
+        const result = await fetch('https://api.openweathermap.org/data/2.5/weather?appid=57c70e5816fcd6cbdb312839f8ff4ea2&q=' + input);
         let data = await result.json();
 
         if (cityList.indexOf(input) === -1) {
